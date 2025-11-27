@@ -1,0 +1,172 @@
+import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import Team from './Team';
+import HeroSlideshow from './Slideshow.jsx';
+import '../components/Home.css';
+
+// Import images (place these in src/assets/)
+import dataImg from '../assets/data-tools.jpg';
+import dialogueImg from '../assets/dialogue.jpg';
+import reportImg from '../assets/reports.jpg';
+
+const cardVariant = {
+  hidden: { opacity: 0, y: 24, scale: 0.98 },
+  visible: (i = 1) => ({
+    opacity: 1,
+    y: 0,
+    scale: 1,
+    transition: { delay: i * 0.12, duration: 0.5, ease: 'easeOut' },
+  }),
+};
+
+const sectionReveal = {
+  hidden: { opacity: 0, y: 36, scale: 0.98 },
+  visible: { opacity: 1, y: 0, scale: 1, transition: { duration: 0.6 } },
+};
+
+export default function Home() {
+  return (
+    <div className="page-container">
+      {/* HERO SLIDESHOW */}
+      <HeroSlideshow />
+
+      {/* WHY IT MATTERS */}
+      <motion.section
+        className="section"
+        id="why-it-matters"
+        variants={sectionReveal}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
+        <div className="section-grid md:grid-cols-2">
+          <div>
+            <h2>Why It Matters</h2>
+            <p>
+              Kenya has made bold promises to its children through the Children Act (No. 29 of 2022). But are these
+              promises being kept? Our work ensures accountability, transparency, and progress for every child.
+            </p>
+            <a href="#impact" className="btn-primary mt-4 inline-block">
+              Read our reports
+            </a>
+          </div>
+          <div className="card">
+            <img src={reportImg} alt="Children Act report" />
+          </div>
+        </div>
+      </motion.section>
+
+      {/* HOW WE WORK */}
+      <section id="how-we-work" className="section bg-slate-50">
+        <motion.h2
+          className="text-2xl md:text-3xl font-semibold"
+          initial={{ opacity: 0, y: 16 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+        >
+          How We Work
+        </motion.h2>
+        <div className="section-grid md:grid-cols-3 mt-8">
+          {[
+            
+            {
+              img: reportImg,
+              title: 'Evidence & Analysis',
+              text: 'We collect and analyze data to track the implementation of the Children Act through research, policy review, and fieldwork.',
+            },
+            {
+              img: reportImg,
+              title: 'Public Knowledge',
+              text: 'We publish the State of the Child in Kenya Report, policy briefs, and open-data dashboards.',
+            },
+            {
+              img: reportImg,
+              title: 'Dialogue',
+              text: 'We convene annual forums where children, policymakers, and communities reflect on progress and challenges.',
+            },
+            {
+              img: reportImg,
+              title: 'Independence & Credibility',
+              text: 'Our multidisciplinary team ensures that findings remain objective, rigorous, and actionable.',
+            },
+            {
+              img: dialogueImg,
+              title: 'Public Knowledge & Dialogue',
+              text: 'We share insights through reports, forums, and policy briefs to drive informed discussion and decision-making.',
+            },
+          ].map((item, i) => (
+            <motion.article
+              key={item.title}
+              className="card"
+              custom={i}
+              variants={cardVariant}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.2 }}
+            >
+              <div className="relative h-44 md:h-52 overflow-hidden">
+                <img src={item.img} alt={item.title} />
+              </div>
+              <div className="card-content">
+                <h3>{item.title}</h3>
+                <p>{item.text}</p>
+              </div>
+            </motion.article>
+          ))}
+        </div>
+      </section>
+
+      {/* IMPACT */}
+      <motion.section
+        className="section"
+        id="impact"
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+        variants={sectionReveal}
+      >
+        <h2>Our Impact</h2>
+        <p className="max-w-prose mt-2">
+          Since inception, we’ve worked with policymakers, communities, and children themselves to transform words on paper into tangible improvements in children’s lives across Kenya.
+        </p>
+        <div className="section-grid md:grid-cols-3 mt-8">
+          <motion.div className="card p-6 shadow" whileHover={{ y: -6 }} transition={{ duration: 0.25 }}>
+            <h4>Policy Changes</h4>
+            <p>Supported revisions and tracked compliance at county level.</p>
+          </motion.div>
+          <motion.div className="card p-6 shadow" whileHover={{ y: -6 }} transition={{ duration: 0.25 }}>
+            <h4>Community Impact</h4>
+            <p>Engaged communities to implement child protection mechanisms.</p>
+          </motion.div>
+          <motion.div className="card p-6 shadow" whileHover={{ y: -6 }} transition={{ duration: 0.25 }}>
+            <h4>Data Platforms</h4>
+            <p>Built dashboards that policymakers use to allocate resources.</p>
+          </motion.div>
+        </div>
+      </motion.section>
+
+      {/* TEAM */}
+      <section className="section bg-slate-50">
+        <Team />
+      </section>
+
+      {/* CTA */}
+      <section id="contact" className="section text-center">
+        <motion.h2 initial={{ opacity: 0, y: 10 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }}>
+          Partner With Us
+        </motion.h2>
+        <motion.p className="mt-4 max-w-xl mx-auto" initial={{ opacity: 0 }} whileInView={{ opacity: 1 }} viewport={{ once: true }}>
+          We welcome collaboration in research, funding, and public dialogue to ensure the Children Act fulfills its promise.
+        </motion.p>
+        <div className="hero-buttons mt-6 justify-center flex gap-4">
+          <motion.a href="/contact" className="btn-primary" whileHover={{ scale: 1.03 }}>
+            Contact Us
+          </motion.a>
+          <motion.a href="/donate" className="btn-secondary" whileHover={{ scale: 1.03 }}>
+            Support our work
+          </motion.a>
+        </div>
+      </section>
+    </div>
+  );
+}
