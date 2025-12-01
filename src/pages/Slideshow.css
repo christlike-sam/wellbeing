@@ -4,7 +4,7 @@
   width: 100%;
   height: 60vh; /* default for small screens */
   overflow: hidden;
-  border-radius: 12px ;
+  border-radius: 12px;
 }
 
 @media (min-width: 768px) {

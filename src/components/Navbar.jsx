@@ -17,7 +17,7 @@ const Navbar = () => {
         <Link to="/" className="logo-link">
           <img src={logo} alt="Wellbeing Institute Logo" className="logo" />
         </Link>
-        <h1 className="brand-name">The Well-Being Institute</h1>
+        <h1 className="brand-name">The WellBeing Institute</h1>
       </div>
 
       {/* Navigation Links */}
