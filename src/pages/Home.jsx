@@ -71,28 +71,28 @@ export default function Home() {
             
             {
               img: reportImg,
-              title: 'Evidence & Analysis',
-              text: 'We collect and analyze data to track the implementation of the Children Act through research, policy review, and fieldwork.',
+              title: 'Data Tools',
+              text: 'We develop tools that make child-related data accessible, usable, and visible. These include indicator trackers, policy compliance maps, and open-data dashboards.',
+            },
+            {
+              img: reportImg,
+              title: 'Evidence &amp; Analysis',
+              text: 'We collect and analyse data to understand how the Children Act is being implemented across institutions and counties.',
             },
             {
               img: reportImg,
               title: 'Public Knowledge',
-              text: 'We publish the State of the Child in Kenya Report, policy briefs, and open-data dashboards.',
+              text: 'We publish the annual State of the Child in Kenya Report, policy briefs, and simplified dashboards.',
             },
             {
               img: reportImg,
               title: 'Dialogue',
-              text: 'We convene annual forums where children, policymakers, and communities reflect on progress and challenges.',
-            },
-            {
-              img: reportImg,
-              title: 'Independence & Credibility',
-              text: 'Our multidisciplinary team ensures that findings remain objective, rigorous, and actionable.',
+              text: 'We convene forums where children, policymakers, and communities reflect on progress and challenges.',
             },
             {
               img: dialogueImg,
-              title: 'Public Knowledge & Dialogue',
-              text: 'We share insights through reports, forums, and policy briefs to drive informed discussion and decision-making.',
+              title: 'Independence &amp; Credibility',
+              text: 'Our multidisciplinary team ensures all findings are objective, rigorous, and actionable.',
             },
           ].map((item, i) => (
             <motion.article
@@ -116,35 +116,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* IMPACT */}
-      <motion.section
-        className="section"
-        id="impact"
-        initial="hidden"
-        whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
-        variants={sectionReveal}
-      >
-        <h2>Our Impact</h2>
-        <p className="max-w-prose mt-2">
-          Since inception, we’ve worked with policymakers, communities, and children themselves to transform words on paper into tangible improvements in children’s lives across Kenya.
-        </p>
-        <div className="section-grid md:grid-cols-3 mt-8">
-          <motion.div className="card p-6 shadow" whileHover={{ y: -6 }} transition={{ duration: 0.25 }}>
-            <h4>Policy Changes</h4>
-            <p>Supported revisions and tracked compliance at county level.</p>
-          </motion.div>
-          <motion.div className="card p-6 shadow" whileHover={{ y: -6 }} transition={{ duration: 0.25 }}>
-            <h4>Community Impact</h4>
-            <p>Engaged communities to implement child protection mechanisms.</p>
-          </motion.div>
-          <motion.div className="card p-6 shadow" whileHover={{ y: -6 }} transition={{ duration: 0.25 }}>
-            <h4>Data Platforms</h4>
-            <p>Built dashboards that policymakers use to allocate resources.</p>
-          </motion.div>
-        </div>
-      </motion.section>
-
+      
       {/* TEAM */}
       <section className="section bg-slate-50">
         <Team />
