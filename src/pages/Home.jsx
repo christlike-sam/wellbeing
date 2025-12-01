@@ -75,7 +75,7 @@ export default function Home() {
               text: 'We develop tools that make child-related data accessible, usable, and visible. These include indicator trackers, policy compliance maps, and open-data dashboards.',
             },
             {
-              img: reportImg,
+              img: dataImg,
               title: 'Evidence &amp; Analysis',
               text: 'We collect and analyse data to understand how the Children Act is being implemented across institutions and counties.',
             },
