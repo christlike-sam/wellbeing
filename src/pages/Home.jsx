@@ -43,7 +43,7 @@ export default function Home() {
           <div>
             <h2>Why It Matters</h2>
             <p>
-              Kenya has made bold promises to its children through the Children Act (No. 29 of 2022). But are these
+              Kenya has made bold promises to its children through the Children Act. But are these
               promises being kept? Our work ensures accountability, transparency, and progress for every child.
             </p>
             <a href="#impact" className="btn-primary mt-4 inline-block">
