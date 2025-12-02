@@ -5,11 +5,11 @@ import HeroSlideshow from './Slideshow.jsx';
 import '../components/Home.css';
 
 // Import images (place these in src/assets/)
-import dataImg from '../assets/data-tools.jpg';
+import dataImg from '../assets/data-tools.jpeg';
 import dialogueImg from '../assets/dialogue.jpg';
 import reportImg from '../assets/reports.jpg';
 import dtImg from '../assets/dt.jpg';
-import eaImg from '../assets/ea.jpg';
+import eaImg from '../assets/he.jpg';
 import pkImg from '../assets/pk.jpg';
 import icImg from '../assets/ic.jpg';
 
