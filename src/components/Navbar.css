@@ -57,7 +57,7 @@
   display: block;
   width: 0%;
   height: 2px;
-  background: orange;
+  background: rgb(255, 255, 255);
   transition: width 0.3s;
   position: absolute;
   bottom: -4px;
@@ -65,7 +65,7 @@
 }
 
 .nav-item:hover {
-  color: orange;
+  color: rgb(255, 255, 255);
 }
 
 .nav-item:hover::after {
