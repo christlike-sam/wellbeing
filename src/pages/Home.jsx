@@ -5,7 +5,7 @@ import HeroSlideshow from './Slideshow.jsx';
 import '../components/Home.css';
 
 // Import images (place these in src/assets/)
-import dataImg from '../assets/data-tools.jpg';
+
 import dialogueImg from '../assets/dialogue.jpg';
 import reportImg from '../assets/reports.jpg';
 import dtImg from '../assets/dt.jpg';
