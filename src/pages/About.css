@@ -15,6 +15,9 @@
   color: #fff;
   border-radius: 10px;
 }
+.hero-overlay h1{
+color:#00ccff;
+}
 
 .about-story,
 .about-team,
