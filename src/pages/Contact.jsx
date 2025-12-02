@@ -25,7 +25,7 @@ const Contact = () => {
       <section style={{ marginTop: '3rem', textAlign: 'center' }}>
         <h2>Our Contact Information</h2>
         <p>Email: info@wellbeinginstitute.or.ke</p>
-        <p>Phone: +254 700 000000</p>
+        <p>Phone: +254 700 611139</p>
         <p>Address: Nairobi, Kenya</p>
       </section>
 
