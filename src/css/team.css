@@ -9,7 +9,7 @@
 
 .team h2 {
   color: #fff;
-  background-color: #000000;
+  background-color: #015387;
   text-align: center;
   padding: 15px 0;
   border-radius: 0 40px 0 40px;
@@ -45,7 +45,7 @@
 .team-member figcaption h3 {
   font-size: 1.2rem;
   margin-bottom: 5px;
-  color: #0f6d7e;
+  color: #015387;
 }
 
 .team-member figcaption p {
