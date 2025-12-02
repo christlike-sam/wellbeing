@@ -1,4 +1,4 @@
-import aboutImg from '../assets/about-hero.jpg';
+import abtImg from '../assets/abt.jpg';
 import Team from './Team';
 
 const About = () => {
@@ -16,7 +16,7 @@ const About = () => {
         <h2>Our Story</h2>
         <p>At the Wellbeing Institute, the Children Act is deeply personal. For decades, we have worked to advance the wellbeing of children and families across Kenya. In this Act, we saw more than a law - we saw a shared promise: a progressive, unifying platform that strengthens our resolve, aligns our mission, and boldly declares that every child’s life and dignity matter.
 </p>
-        <img src={aboutImg} alt="Children and community" style={{ width: '100%', borderRadius: '10px', marginTop: '1rem' }} />
+        <img src={abtImg} alt="Children and community" style={{ width: '100%', borderRadius: '10px', marginTop: '1rem' }} />
       </section>
 
       {/* OUR TEAM */}
