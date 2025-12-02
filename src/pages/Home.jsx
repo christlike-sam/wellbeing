@@ -80,7 +80,7 @@ export default function Home() {
             },
             {
               img: eaImg,
-              title: 'Evidence & Analysis',
+              title: 'Evidence And Analysis',
               text: 'We collect and analyse data to understand how the Children Act is being implemented across institutions and counties.',
             },
             {
@@ -95,7 +95,7 @@ export default function Home() {
             },
             {
               img: icImg,
-              title: 'Independence & Credibility',
+              title: 'Independence And Credibility',
               text: 'Our multidisciplinary team ensures all findings are objective, rigorous, and actionable.',
             },
           ].map((item, i) => (
