@@ -33,7 +33,7 @@ const About = () => {
       {/* OUR TEAM */}
       <section className="about-team">
         <div className="container">
-          <h2>Our Team</h2>
+      
           <Team />
         </div>
       </section>
