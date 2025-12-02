@@ -8,6 +8,10 @@ import '../components/Home.css';
 import dataImg from '../assets/data-tools.jpg';
 import dialogueImg from '../assets/dialogue.jpg';
 import reportImg from '../assets/reports.jpg';
+import dtImg from '../assets/dt.jpg';
+import eaImg from '../assets/ea.jpg';
+import pkImg from '../assets/pk.jpg';
+import icImg from '../assets/ic.jpg';
 
 const cardVariant = {
   hidden: { opacity: 0, y: 24, scale: 0.98 },
@@ -70,28 +74,28 @@ export default function Home() {
           {[
             
             {
-              img: reportImg,
+              img: dtImg,
               title: 'Data Tools',
               text: 'We develop tools that make child-related data accessible, usable, and visible. These include indicator trackers, policy compliance maps, and open-data dashboards.',
             },
             {
-              img: dataImg,
-              title: 'Evidence &amp; Analysis',
+              img: eaImg,
+              title: 'Evidence & Analysis',
               text: 'We collect and analyse data to understand how the Children Act is being implemented across institutions and counties.',
             },
             {
-              img: reportImg,
+              img: pkImg,
               title: 'Public Knowledge',
               text: 'We publish the annual State of the Child in Kenya Report, policy briefs, and simplified dashboards.',
             },
             {
-              img: reportImg,
+              img: dialogueImg,
               title: 'Dialogue',
               text: 'We convene forums where children, policymakers, and communities reflect on progress and challenges.',
             },
             {
-              img: dialogueImg,
-              title: 'Independence &amp; Credibility',
+              img: icImg,
+              title: 'Independence & Credibility',
               text: 'Our multidisciplinary team ensures all findings are objective, rigorous, and actionable.',
             },
           ].map((item, i) => (
